@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+}
+
+h5{
+    margin: 0;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Magra', sans-serif;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+}
+
+#containerTitulo{
+    text-align: center;
+    font-size: 64px;
+}
+
+.containerItem{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.containerItem2{
+    display: flex;
+    flex-direction: row;
+}
+
+.containerBox{
+    width: 551px;
+    height: 355px;
+    margin-right: 50px;
+    background-color: #50C878;
+}
+
+.containerBox input{
+    -moz-appearance: textfield;
+   appearance: textfield;
+}
+
+.containerBox input:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.boxTitulo{
+    padding: 20px;
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 40px;
+    font-family: 'Magra', sans-serif;
+}
+
+.boxInput, .boxResult{
+    font-size: 36px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin: 10px;
+}
+
+.boxInput label, .boxResult label{
+    width: 40%;
+}
+
+.boxInput input, .boxResult input{
+    width: 40%;
+    height: 40px;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Magra:wght@700&display=swap" rel="stylesheet"> 
+    <title>SerraJR</title>
+</head>
+<body>
+    <div id="main">
+        <div id="container">
+            <div id="containerTitulo">
+                <h5>
+                    Serra Calculator
+                </h5>
+            </div>
+
+            <div class="containerItem">
+                <div class="containerBox">
+                    <div class="boxTitulo">
+                        <h5>
+                            Soma
+                        </h5>
+                    </div>
+                    <div class="boxInput">
+                        <label>
+                            <span>Número 1</span>
+                        </label>
+                        <input id="soma1" type="number">
+                    </div>
+                    <div class="boxInput">
+                        <label>
+                            <span>Número 2</span>
+                        </label>
+                        <input id="soma2" onfocus="Soma()" type="number">
+                    </div>
+                    <div class="boxResult">
+                        <label>
+                            <span>Resultado</span>
+                        </label>
+                        <input id="resultadoSoma" type="number" readonly>
+                    </div>
+                </div>
+
+                <div class="containerBox">
+                    <div class="boxTitulo">
+                        <h5>Subtração</h5>
+                    </div>
+                    <div class="boxInput">
+                        <label>
+                            <span>Número 1</span>
+                        </label>
+                        <input id="subtracao1" type="number">
+                    </div>
+                    <div class="boxInput">
+                        <label>
+                            <span>Número 2</span>
+                        </label>
+                        <input id="subtracao2" type="number">
+                    </div>
+                    <div class="boxResult">
+                        <label>
+                            <span>Resultado</span>
+                        </label>
+                        <input id="resultadoSubtracao" type="number" readonly>
+                    </div>
+                </div>
+            </div>
+
+            <div class="containerItem2">
+                <div class="containerBox">
+                    <div class="boxTitulo">
+                        <h5>Multiplicação</h5>
+                    </div>
+                    <div class="boxInput">
+                        <label>
+                            <span>Número 1</span>
+                        </label>
+                        <input id="multiplicacao1" type="number">
+                    </div>
+                    <div class="boxInput">
+                        <label>
+                            <span>Número 2</span>
+                        </label>
+                        <input id="multiplicacao2" type="number">
+                    </div>
+                    <div class="boxResult">
+                        <label>
+                            <span>Resultado</span>
+                        </label>
+                        <input id="resultadoMultiplicacao" type="number" readonly>
+                    </div>
+                </div>
+    
+                <div class="containerBox">
+                    <div class="boxTitulo">
+                        <h5>Divisão</h5>
+                    </div>
+                    <div class="boxInput">
+                        <label>
+                            <span>Número 1</span>
+                        </label>
+                        <input id="divisao1" type="number">
+                    </div>
+                    <div class="boxInput">
+                        <label>
+                            <span>Número 2</span>
+                        </label>
+                        <input id="divisao2" type="number">
+                    </div>
+                    <div class="boxResult">
+                        <label>
+                            <span>Resultado</span>
+                        </label>
+                        <input id="resultadoDivisao" type="number" readonly>
+                    </div>
+                </div>
+            </div>
+
+            <script src="../static/js/script.js"></script>
+
+            
+        </div>
+    </div>
+</body>
+</html>
