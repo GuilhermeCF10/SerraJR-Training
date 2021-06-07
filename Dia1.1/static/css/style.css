@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+h4{
+    margin: 0;
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    font-family: 'Magra', sans-serif;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#containerTitulo{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    font-size: 36px;
+}
+
+
+#containerTitulo span{
+    margin-left: 5px;
+    position: relative;
+    bottom: 5px;
+}
+
+#button button{
+    border-radius: 4px;
+    background-color: #993399;
+    width: 314px;
+    height: 86px;
+    border: none;
+    font-size: 36px;
+    color: white;
+}
+
+#button button h5{
+    margin: auto;
+}
