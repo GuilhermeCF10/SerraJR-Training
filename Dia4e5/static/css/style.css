@@ -80,7 +80,9 @@ h5{
 
 .tarefas{
     min-height: 300px;
+    max-height: 310px;
     max-width: 100%;
+    overflow-y: scroll;
 }
 
 .tarefas li{
