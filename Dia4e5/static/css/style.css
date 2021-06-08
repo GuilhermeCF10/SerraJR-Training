@@ -78,6 +78,11 @@ h5{
     font-family: 'Magra', sans-serif;
 }
 
+.tarefas{
+    min-height: 300px;
+    max-width: 100%;
+}
+
 .tarefas li{
     display: flex;
     flex-direction: row;
