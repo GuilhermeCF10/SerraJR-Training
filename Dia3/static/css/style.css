@@ -1,0 +1,109 @@
+*{
+    font-family: 'Magra', sans-serif;
+}
+
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+h5{
+    margin: 0;
+}
+
+
+/*******    Header      *******/
+#header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A50010;
+    width: 100%;
+    height: 20vh;
+}
+
+#headerItems{}
+
+#headerTitulo{
+    color: white;
+    font-size: 36px;
+}
+
+
+/*******        Main        *******/
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+}
+
+.membros{
+    background-color: #A50010;
+    width: 310px;
+    height: 314px;
+    margin-right: 40px;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+
+}
+
+.membrosTitulo{
+    position: relative;
+    left: 80px;
+    bottom: 25px;
+    max-width: 150px;
+    background-color: black;
+    color: white;
+    font-size: 36px;
+}
+
+
+.membrosIdade{
+    margin-top: 50px;;
+}
+
+.membrosTime{
+    margin: 10px 0px 10px 0px;
+}
+
+.membrosSobrenome{
+    
+}
+
+
+/*******    Header      *******/
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A50010;
+    width: 100%;
+    height: 10vh;
+}
+
+#footerItems{}
+
+#footerTitulo{
+    color: white;
+    font-size: 24px;
+}
+
+
+
+
+
+
+
+
+
+
