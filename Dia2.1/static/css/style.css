@@ -47,11 +47,15 @@ h5{
 .containerBox input{
     -moz-appearance: textfield;
    appearance: textfield;
+   box-shadow: 0 0 0 0;
+    border: 0px;
+    outline: 0;
 }
 
 
 .containerBox input:focus{
     box-shadow: 0 0 0 0;
+    border: 0px;
     outline: 0;
 }
 
