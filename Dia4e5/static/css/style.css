@@ -1,6 +1,6 @@
-/**{
-    
-}*/
+*{
+    font-family: 'Magra', sans-serif;
+}
 
 body{
     margin: 0;
@@ -28,7 +28,6 @@ h5{
 #headerTitulo{
     color: black;
     font-size: 36px;
-    font-family: 'Magra', sans-serif;
 }
 
 
@@ -54,7 +53,6 @@ h5{
 
 #titulo{
     font-size: 36px;
-    font-family: 'Magra', sans-serif;
     font-weight: 400;
 }
 
@@ -66,7 +64,6 @@ h5{
     width: 1089px;
     height: 86px;
     font-size: 24px;
-    font-family: 'Magra', sans-serif;
 }
 
 #inputItem button{
@@ -75,7 +72,6 @@ h5{
     background-color: #00CED1;
     color: black;
     font-size: 24px;
-    font-family: 'Magra', sans-serif;
 }
 
 .tarefas{
@@ -94,7 +90,6 @@ h5{
 
 .tarefas li h5{
     font-size: 24px;
-    font-family: 'Magra', sans-serif;
 }
 
 .tarefas li span{
@@ -120,7 +115,6 @@ h5{
 #footerTitulo{
     color: black;
     font-size: 24px;
-    font-family: 'Magra', sans-serif;
 }
 
 
