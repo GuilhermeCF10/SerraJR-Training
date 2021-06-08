@@ -1,0 +1,127 @@
+/**{
+    
+}*/
+
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+h5{
+    margin: 0;
+}
+
+
+/*******    Header      *******/
+#header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00CED1;
+    width: 100%;
+    height: 20vh;
+}
+
+#headerItems{}
+
+#headerTitulo{
+    color: black;
+    font-size: 36px;
+    font-family: 'Magra', sans-serif;
+}
+
+
+/*******        Main        *******/
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 70vh;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#inputTarefa{
+    margin-top: 50px;
+}
+
+#titulo{
+    font-size: 36px;
+    font-family: 'Magra', sans-serif;
+    font-weight: 400;
+}
+
+#inputItem{
+    margin-bottom: 50px;
+}
+
+#inputItem input{
+    width: 1089px;
+    height: 86px;
+    font-size: 24px;
+    font-family: 'Magra', sans-serif;
+}
+
+#inputItem button{
+    width: 207px;
+    height: 86px;
+    background-color: #00CED1;
+    color: black;
+    font-size: 24px;
+    font-family: 'Magra', sans-serif;
+}
+
+.tarefas li{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-size: 24px;
+}
+
+.tarefas li h5{
+    font-size: 24px;
+    font-family: 'Magra', sans-serif;
+}
+
+.tarefas li span{
+    margin-left: 10px;
+    font-weight: 0;
+    font-size: 24px;
+}
+
+
+
+/*******    Header      *******/
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00CED1;
+    width: 100%;
+    height: 10vh;
+}
+
+#footerItems{}
+
+#footerTitulo{
+    color: black;
+    font-size: 24px;
+    font-family: 'Magra', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
