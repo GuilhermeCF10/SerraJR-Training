@@ -1,0 +1,75 @@
+*{
+    font-family: 'Magra', sans-serif;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 80vh;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#inputTarefa{
+    margin-top: 10px;
+}
+
+#titulo{
+    font-size: 36px;
+    font-weight: 400;
+}
+
+#inputItem{
+    margin-bottom: 50px;
+}
+
+#inputItem input{
+    width: 1089px;
+    height: 86px;
+    font-size: 24px;
+}
+
+#inputItem button{
+    margin-left: 20px;
+    width: 207px;
+    height: 86px;
+    background-color: #00CED1;
+    color: black;
+    font-size: 24px;
+}
+
+.tarefas{
+    margin-bottom: 20px;
+    min-height: 300px;
+    max-height: 310px;
+    max-width: 100%;
+    overflow-y: scroll;
+}
+
+.tarefas li{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-size: 24px;
+}
+
+.tarefas li h5{
+    font-size: 24px;
+}
+
+.tarefas li span{
+    margin-left: 10px;
+    font-weight: 0;
+    font-size: 24px;
+}
+
+h5{
+    margin: 0;
+}
