@@ -117,11 +117,6 @@ function AddTarefa() {
    
 function RemoverTarefa(pos) {
     listaTarefas.removeChild(itensLista[pos])
-    //console.log(itensLista)
-    //
-    //console.log(itensLista)
     
-    console.log(itensLista)
-    console.log(listaTarefas)
     
 }
