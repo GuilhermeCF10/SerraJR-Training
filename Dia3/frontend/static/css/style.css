@@ -58,13 +58,18 @@ h5{
 }
 
 .membrosTitulo{
-    position: relative;
-    left: 5vw;
-    bottom: 25px;
-    max-width: 150px;
-    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     font-size: 36px;
+}
+
+.membrosTitulo h5{
+    position: relative;
+    bottom: 25px;
+    background-color: black;
+    padding: 5px;
 }
 
 

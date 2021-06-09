@@ -1,3 +1,6 @@
+@import url('https://fonts.gstatic.com');
+@import url('https://fonts.googleapis.com/css2?family=Magra&display=swap');
+
 *{
     font-family: 'Magra', sans-serif;
 }
@@ -69,6 +72,7 @@ h5{
     position: relative;
     bottom: 25px;
     background-color: black;
+    padding: 5px;
 }
 
 .membrosIdade{
