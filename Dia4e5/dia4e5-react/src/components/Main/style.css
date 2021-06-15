@@ -2,7 +2,7 @@
     font-family: 'Magra', sans-serif;
 }
 
-#main{
+.main{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,34 +11,36 @@
     min-height: 80vh;
 }
 
-#container{
+.card{
     display: flex;
     flex-direction: column;
     
 }
 
-#inputTarefa{
+.input-tarefa{
     margin-top: 10px;
 }
 
-#titulo{
+.titulo{
     font-size: 36px;
     font-weight: 400;
 }
 
-#inputItem{
+.input-item{
+    display: flex;
     margin-bottom: 50px;
 }
 
-#inputItem input{
-    width: 1089px;
+.input-item input{
+    width: 900px;
+    padding: 0 24px;
     height: 86px;
     font-size: 24px;
 }
 
-#inputItem button{
+.input-item button{
     margin-left: 20px;
-    width: 207px;
+    width: 20%;
     height: 86px;
     background-color: #00CED1;
     color: black;

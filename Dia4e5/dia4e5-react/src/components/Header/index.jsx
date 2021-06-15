@@ -3,12 +3,12 @@ import React from 'react'
 import './style.css'
 
 
-function Header() {
+function Header(props) {
     return (
-        <header id="header">
-            <div id="headerTitulo">
+        <header className="header">
+            <div className="header-titulo">
                 <h5>
-                    Loucos por Carros
+                    {props.titulo}
                 </h5>
             </div>
         </header>

@@ -1,14 +1,12 @@
 body{
     margin: 0;
-    width: 100vw;
-    height: 100vh;
 }
 
 h4{
     margin: 0;
 }
 
-#main{
+.main{
     display: flex;
     justify-content: center;
     width: 100%;
@@ -17,14 +15,14 @@ h4{
     font-family: 'Magra', sans-serif;
 }
 
-#container{
+.card{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#containerTitulo{
+.card-titulo{
     display: flex;
     flex-direction: row;
     margin-bottom: 15px;
@@ -32,13 +30,13 @@ h4{
 }
 
 
-#containerTitulo span{
+.card-titulo span{
     margin-left: 5px;
     position: relative;
     bottom: 5px;
 }
 
-#button button{
+.botao button{
     border-radius: 4px;
     background-color: #993399;
     width: 314px;
@@ -48,6 +46,6 @@ h4{
     color: white;
 }
 
-#button button h5{
+.botao button h5{
     margin: auto;
 }

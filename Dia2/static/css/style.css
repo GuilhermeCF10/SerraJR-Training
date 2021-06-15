@@ -8,7 +8,7 @@ h5{
     margin: 0;
 }
 
-#main{
+.main{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,7 +17,7 @@ h5{
     height: 100vh;
 }
 
-#container{
+.card{
     width: 714px;
     height: 561px;
     background-color: #50C878;
@@ -25,66 +25,62 @@ h5{
     font-family: 'Magra', sans-serif;
 }
 
-#form{
+.form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#form input:focus{
+.form input:focus{
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
     font-size: 24px;
 }
 
-#form input{
+.form input{
     font-size: 24px;
 }
 
-#formTitulo{
+.form-titulo{
     width: 100%;
     
     font-size: 48px;
 }
 
-#formTitulo h5{
+.form-titulo h5{
     margin: 30px 0px 30px 40px;
 }
 
-.formInput{
+.form-input{
     display: flex;
     justify-content: center;
-    margin: 20px;
+    margin: 20px 0;
     
 }
 
-.formInput input{
+.form-input input{
     width: 642px;
     height: 71px;
     border: none;
+    padding: 0 15px;
 }
 
-#form ::placeholder{
+.form ::placeholder{
     font-size: 24px;
 }
 
-#button{
-    margin: 20px;
+.botao{
+    margin: 20px 0;
     
 }
 
-#button button{
-    width: 650px;
+.botao button{
+    width: 672px;
     height: 64px;
     background-color: #0E5626;
     border: none;
     color: white;
     font-size: 24px;
 }
-
-
-
-
-

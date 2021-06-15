@@ -11,12 +11,12 @@ import Footer from '../components/Footer';
 function App() {
     return (
         <div>
-
-            <Header />
+            
+            <Header titulo="Loucos por Carros"/>
 
             <Main />
 
-            <Footer />
+            <Footer titulo="COPYRIGHT © 2021 - SERRA JUNIOR ENGENHARIA"/>
 
         </div>
     )

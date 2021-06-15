@@ -1,8 +1,4 @@
-*{
-    font-family: 'Magra', sans-serif;
-}
-
-#main{
+.main{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,14 +7,14 @@
     height: 80vh;
 }
 
-#container{
+.card{
     display: flex;
     flex-direction: column;
     color: white;
     
 }
 
-#mainCard{
+.main-card{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,11 +26,11 @@
     font-size: 24px;
 }
 
-#cardTitulo{
+.card-titulo{
     margin-bottom: 20px;
 }
 
-#botao button{
+.botao button{
     width: 468px;
     height: 88px;
     background-color: #A50010;

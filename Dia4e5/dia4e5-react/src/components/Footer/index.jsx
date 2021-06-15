@@ -3,12 +3,12 @@ import React from 'react'
 import './style.css'
 
 
-function Footer() {
+function Footer(props) {
     return (
-        <footer id="footer">
-            <div id="footerTitulo">
+        <footer className="footer">
+            <div className="footer-titulo">
                 <span>
-                    COPYRIGHT © 2021 - SERRA JUNIOR ENGENHARIA
+                    {props.titulo}
                 </span>
             </div>
         </footer>

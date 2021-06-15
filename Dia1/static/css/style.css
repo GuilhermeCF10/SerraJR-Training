@@ -1,7 +1,5 @@
 body{
     margin: 0;
-    width: 100vw;
-    height: 100vh;
 }
 
 h5{
@@ -15,80 +13,79 @@ ul{
 }
 
 
-#main{
+.main{
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     align-items: center;
     font-family: 'Magra', sans-serif;
     
 }
 
-#main span, #main h5{
+.main span, .main h5{
     color: white;
 }
 
-#container{
+.card{
     display: flex;
     flex-direction: column;
-    width: 573px;
+    width: 583px;
     height: 564px;
     background-color: #993399;
 }
 
-#containerTitulo{
+.card-titulo{
     text-align: center;
     padding: 30px;
     font-size: 48px;
-}
-
-#divisor{
     border: 1px solid white;
 }
 
-#squad{
+
+
+.squad{
     padding-top: 30px;
     display: flex;
     flex-direction: row;
 }
 
 
-#lider{
+.lider{
     padding: 5px 0px 5px 0px;
     display: flex;
     flex-direction: row;
 }
 
-#squadTitulo, #liderTitulo{
+.squad-titulo, .lider-titulo{
     margin-left: 50px;
     width: 20%;
     font-size: 36px;
 }
 
-#squadNome, #liderNome{
+.squad-nome, .lider-nome{
     text-align: center;
     width: 45%;
     font-size: 27px;
 }
 
-#integrantes{
+.integrantes{
     display: flex;
     flex-direction: column;
 }
 
-#integrantesTitulo{
+.integrantes-titulo{
     margin-left: 50px;
     width: 50%;
     font-size: 36px;
 }
 
-#integrantesList{
+.integrantes-list{
     padding-top: 10px;
     font-size: 27px;
 }
 
-#integrantesList ul{
+.integrantes-list ul{
     text-align: center;
 }
 

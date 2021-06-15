@@ -1,0 +1,60 @@
+*{
+    font-family: 'Magra', sans-serif;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+}
+
+.membros{
+    background-color: #A50010;
+    width: 20vw;
+    height: 314px;
+    margin-right: 40px;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+
+}
+
+.membrosTitulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 36px;
+}
+
+.membrosTitulo h5{
+    position: relative;
+    bottom: 25px;
+    background-color: black;
+    padding: 5px;
+}
+
+
+.membrosIdade{
+    margin-top: 50px;;
+}
+
+.membrosTime{
+    margin: 10px 0px 10px 0px;
+}
+
+.membrosSobrenome{
+    
+}
+
+h5{
+    margin: 0;
+}
