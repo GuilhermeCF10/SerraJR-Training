@@ -2,40 +2,39 @@ import React, { useState } from 'react';
 
 import './style.css';
 
-
-let tarefas = [];
-let index = 0;
+import NewTask from './NewTask';
 
 export default function Main() {
 
-    const [Input, setInput] = useState("");
-    const [Tasks, setTasks] = useState([]);
+    const [input, setInput] = useState("");
+    const [tasks, setTasks] = useState([]);
 
-    
-    function WriteInput(e) {
+    const itemsRendered = tasks.map( (tasksItem) => {
+        return <NewTask key={tasksItem.key} name={tasksItem.name} />;
+    })
+
+
+    function writeInput(e) {
         setInput(e.target.value)
     }
 
-    function AddNewTask() {
+    function addNewTask() {
         
-        if (Input) {
-            const newTask = (
-                <li key={index}>
-                    <h5>
-                        Tarefa: 
-                    </h5>
-                    <span>
-                        {Input}
-                    </span>
-                </li>
-            );
-            
-            tarefas.push(newTask)
-            index = index + 1;
-            setInput("")
-            setTasks(tarefas)
+        if (!input) {
+            return alert("Preencha o campo requerido!")    
         }
         
+
+        const newTask = {
+            key: Math.random(),
+            name: input
+        }
+
+
+        setInput("")
+        setTasks( (prevState) => {
+            return [...prevState, newTask]
+        }); 
     }
 
     return (
@@ -49,8 +48,8 @@ export default function Main() {
                         </div>
 
                         <div className="input-item">
-                            <input className="addNewTarefa" placeholder="Nome" type="text" value={Input} onChange={WriteInput}/>
-                            <button onClick={ () => AddNewTask() }>
+                            <input className="addNewTarefa" placeholder="Nome" type="text" value={input} onChange={writeInput}/>
+                            <button onClick={ () => addNewTask() }>
                                 <span>Adicionar</span>
                             </button>
                         </div>
@@ -58,7 +57,7 @@ export default function Main() {
                     </div>
 
                     <div className="tarefas">
-                        <ul>{Tasks}</ul>
+                        <ul>{itemsRendered}</ul>
                     </div>
                 </div>
             </div>
