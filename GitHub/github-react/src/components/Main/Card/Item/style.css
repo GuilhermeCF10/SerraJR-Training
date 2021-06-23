@@ -45,6 +45,7 @@
 }
 
 .member-content-init-name span{
+    text-align: center;
     margin: 0;
     margin-right: 5px;
 }
@@ -64,6 +65,7 @@
 } 
 
 .member-content-init-follow span{
+    text-align: center;
     margin-right: 5px;
 }
 
@@ -77,6 +79,7 @@
 }
 
 .member-content-init-location span{
+    text-align: center;
     position: relative;
     top: 5px;
     margin-right: 5px;

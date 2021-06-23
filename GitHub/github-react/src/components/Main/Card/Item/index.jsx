@@ -4,7 +4,7 @@ import './style.css';
 
 export default function Item(props) {
     return (
-        <li className="member" key={props.key}>
+        <li className="member" key={props.id}>
             <div className="member-avatar">
                 <img src={props.avatar} alt={props.name}/>
             </div>
