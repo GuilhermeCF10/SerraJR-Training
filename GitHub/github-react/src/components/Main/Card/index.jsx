@@ -39,7 +39,7 @@ export default function Card() {
         // Response of Axios Get Method (repository)
         const responseRepository = await axios.get(urlRepository)
 
-
+        // Store the object of responseRepository in a list
         const listRepos = responseRepository.data;
 
         // Go to list of Repos to get the main Repo (inputRepo)
