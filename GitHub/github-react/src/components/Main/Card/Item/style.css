@@ -1,0 +1,123 @@
+.member{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #993399;
+    width: 100%;
+    height: 180px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.member-avatar{
+    width: 200px;
+    height: 100%;
+}
+
+.member-avatar img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.member-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+}
+
+.member-content-init{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.member-content-init-name{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 23%;
+}
+
+.member-content-init-name span{
+    margin: 0;
+    margin-right: 5px;
+}
+
+.member-content-init-follow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 33%;
+}
+
+.member-content-init-follow-following, .member-content-init-follow-followers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+} 
+
+.member-content-init-follow span{
+    margin-right: 5px;
+}
+
+.member-content-init-location{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    
+}
+
+.member-content-init-location span{
+    position: relative;
+    top: 5px;
+    margin-right: 5px;
+}
+
+.member-content-bio{
+    width: 90%;
+    padding: 5px 0px;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+.member-content-repo{}
+
+
+.member-content-repo a{
+    text-decoration: none;
+    color: white;
+}
+
+.member-content-repo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.member-content-repo a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    transition: 1s;
+}
+
+.member-content-repo-date, .member-content-repo-name, .member-content-repo-icon{
+    width: 20%;
+    text-align: center;
+}
+
+.member-content-repo a:hover{
+    scale: 1.25;
+    color: black;
+}
