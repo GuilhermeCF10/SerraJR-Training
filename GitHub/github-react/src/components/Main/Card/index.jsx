@@ -8,15 +8,11 @@ export default function Card() {
 
     const [inputName, setInputName] = useState("");
     const [inputRepository, setInputRepository] = useState("");
+
     const [membersCards, setMembersCards] = useState([]);
 
     const [userInfo, setUserInfo] = useState();
     const [repoInfo, setRepoInfo] = useState();
-
-
-    
-    
-        
 
 
     function writeInputName(e) {
@@ -29,11 +25,12 @@ export default function Card() {
 
     async function searchOwner() {
 
+        // Check if inputs are done
         if (!inputName || !inputRepository) {
             return alert("Preencha os campos necessários!")
         }
-        console.log(inputName, inputRepository)
-
+        
+        // Url of Github API
         const urlProfile = `https://api.github.com/users/${inputName}`
         const urlRepository = `https://api.github.com/users/${inputName}/repos`
 
@@ -50,9 +47,13 @@ export default function Card() {
             following: responseProfile.data.following,
         }
         
-        setUserInfo( () => {
-            return dataProfile;
-        })
+        // const updateState = (dataProfile) => {
+        //     setUserInfo(dataProfile)
+        // }
+        setUserInfo(dataProfile)
+        //         Ou
+        // setUserInfo( () => {return dataProfile})
+        
 
         // Response of Axios Get Method (repository)
         
@@ -71,50 +72,12 @@ export default function Card() {
                     createAtRepo: eachRepo.created_at,
                     urlRepo: eachRepo.html_url,
                 }
-                setRepoInfo( () => {
-                    return repositoryData;
-                })
+                setRepoInfo(repositoryData)
             }
         }
         
         
-
-        // if (!userInfo || !repoInfo) {
-        //     return searchOwner()
-        // }
-        
-        console.log(userInfo)
-        console.log(repoInfo)
-        addMember();
-
-        
-        
-        
-            // setMembersCards( (prevState) => {
-
-            //     const newPrevState = prevState.filter( (eachPrev) => {
-            //         alert("Você não pode adicionar dois repositórios iguais!")
-            //         return eachPrev.repoName !== _repoInfo.nameRepo
-            //     })
-    
-            //     if (newPrevState.length === prevState.length) {
-            //         return [...prevState, {
-            //             key: Math.random(), 
-            //             avatar: _userInfo.avatar, name: _userInfo.name, location: _userInfo.location, bio: _userInfo.bio, following: _userInfo.following, followers: _userInfo.followers, 
-            //             repoName: _repoInfo.nameRepo ,repoDate: _repoInfo.createAtRepo.slice(0, 10), repoUrl: _repoInfo.urlRepo,
-            //         }];
-            //     } else {
-            //         return [...newPrevState, {
-            //             key: Math.random(), 
-            //             avatar: _userInfo.avatar, name: _userInfo.name, location: _userInfo.location, bio: _userInfo.bio, following: _userInfo.following, followers: _userInfo.followers, 
-            //             repoName: _repoInfo.nameRepo ,repoDate: _repoInfo.createAtRepo.slice(0, 10), repoUrl: _repoInfo.urlRepo,
-        
-            //         }];
-            //     }
-            // })
-    }
-
-    function addMember() {
+        // Structure to add one more object member to list of members
         const newMemberData = {
             key: Math.random(), 
             avatar: userInfo.avatar, name: userInfo.name, location: userInfo.location, bio: userInfo.bio, following: userInfo.following, followers: userInfo.followers, 
@@ -122,22 +85,23 @@ export default function Card() {
             , repoUrl: repoInfo.urlRepo,
         }
 
+        // Add one more object to list of members
         setMembersCards( (prevState) => {
             return [...prevState, newMemberData]
         })
 
-        setInputName( () => {
-            return "";
-        });
-        setInputRepository( () => {
-            return "";
-        });
-        setUserInfo( () => {
-            return;
-        });
-        setRepoInfo( () => {
-            return;
-        });
+        // Setting placeholder again
+        setInputName("");
+        setInputRepository("");
+
+        // setUserInfo( () => {
+        //     return null;
+        // });
+        // setRepoInfo( () => {
+        //     return null;
+        // });
+        
+
     }
 
     function renderProfiles() {
