@@ -11,8 +11,6 @@ export default function Card() {
 
     const [membersCards, setMembersCards] = useState([]);
 
-    const [userInfo, setUserInfo] = useState();
-    const [repoInfo, setRepoInfo] = useState();
 
 
     function writeInputName(e) {
@@ -38,57 +36,34 @@ export default function Card() {
         // Response of Axios Get Method (profile)
         const responseProfile = await axios.get(urlProfile)
 
-        const dataProfile = {
-            avatar: responseProfile.data.avatar_url,
-            name: responseProfile.data.name,
-            bio: responseProfile.data.bio,
-            location: responseProfile.data.location,
-            followers: responseProfile.data.followers,
-            following: responseProfile.data.following,
-        }
-        
-        // const updateState = (dataProfile) => {
-        //     setUserInfo(dataProfile)
-        // }
-        setUserInfo(dataProfile)
-        //         Ou
-        // setUserInfo( () => {return dataProfile})
-        
-
         // Response of Axios Get Method (repository)
-        
         const responseRepository = await axios.get(urlRepository)
+
 
         const listRepos = responseRepository.data;
 
+        // Go to list of Repos to get the main Repo (inputRepo)
         for (let eachRepo of listRepos) {
             let currentRepo = eachRepo.name.toLowerCase()
             let mainRepo = inputRepository.toLowerCase()
 
             if (currentRepo === mainRepo) {
-                
-                const repositoryData = {
-                    nameRepo: eachRepo.name,
-                    createAtRepo: eachRepo.created_at,
-                    urlRepo: eachRepo.html_url,
+                // Structure to add one more object member to list of members
+                const newMemberData = {
+                    key: membersCards.length,
+                    avatar: responseProfile.data.avatar_url, name: responseProfile.data.name, bio: responseProfile.data.bio,
+                    location: responseProfile.data.location, followers: responseProfile.data.followers, following: responseProfile.data.following,
+                    repoName: eachRepo.name, repoDate: eachRepo.created_at.slice(0, 10), repoUrl: eachRepo.html_url,
                 }
-                setRepoInfo(repositoryData)
+
+                // Add one more object to list of members
+                setMembersCards( (prevState) => {
+                    return [...prevState, newMemberData]
+                })
+                break;
             }
         }
         
-        
-        // Structure to add one more object member to list of members
-        const newMemberData = {
-            key: Math.random(), 
-            avatar: userInfo.avatar, name: userInfo.name, location: userInfo.location, bio: userInfo.bio, following: userInfo.following, followers: userInfo.followers, 
-            repoName: repoInfo.nameRepo ,repoDate: repoInfo.createAtRepo.slice(0, 10)
-            , repoUrl: repoInfo.urlRepo,
-        }
-
-        // Add one more object to list of members
-        setMembersCards( (prevState) => {
-            return [...prevState, newMemberData]
-        })
 
         // Setting placeholder again
         setInputName("");
