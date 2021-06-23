@@ -68,15 +68,6 @@ export default function Card() {
         // Setting placeholder again
         setInputName("");
         setInputRepository("");
-
-        // setUserInfo( () => {
-        //     return null;
-        // });
-        // setRepoInfo( () => {
-        //     return null;
-        // });
-        
-
     }
 
     function renderProfiles() {
