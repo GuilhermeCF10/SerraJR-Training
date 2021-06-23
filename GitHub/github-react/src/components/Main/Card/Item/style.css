@@ -9,6 +9,11 @@
     margin-bottom: 10px;
     border-radius: 10px;
     margin-right: 20px;
+    transition: 1s;
+}
+
+.member:hover{
+    scale: 1.01;
 }
 
 .member-avatar{
@@ -119,7 +124,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    transition: 1s;
+    transition: all 1s linear;
 }
 
 .member-content-repo-date, .member-content-repo-name, .member-content-repo-icon{

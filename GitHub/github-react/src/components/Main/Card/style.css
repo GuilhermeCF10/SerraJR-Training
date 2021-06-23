@@ -21,7 +21,14 @@ body, h1{
     width: 690px;
     height: 400px;
     background: linear-gradient(270deg,#0f0c14,#121214);
+    border-radius: 10px;
+    transition: all 1s linear;
 }
+
+.card:hover{
+    scale: 1.05;
+}
+
 
 .card-titulo{
     padding: 35px 0;
