@@ -11,8 +11,6 @@ export default function Card() {
 
     const [membersCards, setMembersCards] = useState([]);
 
-
-
     function writeInputName(e) {
         setInputName(e.target.value);
     }
