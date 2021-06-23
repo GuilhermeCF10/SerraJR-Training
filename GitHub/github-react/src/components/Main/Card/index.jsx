@@ -76,7 +76,7 @@ export default function Card() {
             <div className="card">
 
                 <div className="card-titulo">
-                    <h1>Git Repositorios</h1>
+                    <h1>Git Repositórios</h1>
                 </div>
                 <div className="card-inputs">
                     <input placeholder="Nome de usuário" type="text" value={inputName} onChange={writeInputName} required/>
