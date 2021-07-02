@@ -70,6 +70,7 @@
     max-width: 85vw;
     flex-direction: row;
     list-style-type: none;
+    overflow-x: scroll;
 }
 
 
