@@ -20,7 +20,6 @@ export default function Card() {
     }
 
     async function searchOwner() {
-
         // Check if inputs are done
         if (!inputName || !inputRepository) {
             return alert("Preencha os campos necessários!")
@@ -30,7 +29,6 @@ export default function Card() {
         const urlProfile = `https://api.github.com/users/${inputName}`
         const urlRepository = `https://api.github.com/users/${inputName}/repos`
 
-        
         // Response of Axios Get Method (profile)
         const responseProfile = await axios.get(urlProfile)
 
