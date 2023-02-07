@@ -23,7 +23,7 @@ body, h1{
     background: linear-gradient(270deg,#0f0c14,#121214);
     border-radius: 10px;
     transition: all 0.3s linear;
-    transform: scale(0.9)
+    transform: scale(0.95)
 }
 
 .card:hover{

@@ -2,17 +2,18 @@
     display: flex;
     background-color: #993399;
 	border-radius: 10px;
-    transition: all 1s linear; 
+    transition: all 0.3s linear; 
     flex-direction: row;
     justify-content: center;
     padding: 15px;
     margin: 10px 20px 10px 20px;
-    width: 100%;
+    width: 80%;
     height: 200px;
+    transform: scale(0.95);
 }
 
 .member:hover{
-    scale: 1.05;
+    transform: scale(1);
 }
 
 .member-avatar{
@@ -123,7 +124,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    transition: all 1s linear;
+    transition: all 0.3s linear;
 }
 
 .member-content-repo-date, .member-content-repo-name, .member-content-repo-icon{
@@ -132,7 +133,7 @@
 }
 
 .member-content-repo a:hover{
-    scale: 1.25;
+    transform: scale(1.1);
     color: black;
 }
 

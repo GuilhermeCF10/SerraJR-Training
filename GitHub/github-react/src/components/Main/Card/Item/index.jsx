@@ -34,7 +34,7 @@ export default function Item(props) {
                             <p>{props.repoDate}</p>
                         </div>
                         <div className="member-content-repo-name">
-                            <p>{props.repoName}</p>
+                            <p>Visualizar {props.repoName}</p>
                         </div>
                         <div className="member-content-repo-icon">
                             <span className="material-icons-outlined">arrow_forward</span>    
